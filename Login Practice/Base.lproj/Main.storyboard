@@ -32,12 +32,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd2-VW-D3F">
-                                <rect key="frame" x="278" y="111" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd2-VW-D3F">
+                                <rect key="frame" x="160" y="111" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jIa-g8-KkN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myk-aq-vM4">
+                                <rect key="frame" x="272" y="206" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBp-Fc-Ft3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,6 +55,7 @@
                     <connections>
                         <outlet property="label" destination="som-0L-o8B" id="Qvq-73-2uY"/>
                         <outlet property="loginButton" destination="Gd2-VW-D3F" id="ZuK-v9-gXh"/>
+                        <outlet property="logoutButton" destination="myk-aq-vM4" id="ktM-LL-0f3"/>
                         <outlet property="textField" destination="jdY-Rj-gbi" id="zLj-tw-oEc"/>
                     </connections>
                 </viewController>
